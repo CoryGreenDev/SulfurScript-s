@@ -1,0 +1,35 @@
+var Collider : collider;
+//Size's
+var Size.x : int = 450;
+var Size.y : int = 320;
+var Size.z : int = 350;
+//Crafting Setup (Reference Crafting)
+public var Crafting : crafting
+
+//Character Control
+private var characterController : CharacterController;
+
+function Start() {
+  //Check House part's.
+  if(hPfor1 >= 3 && Crafting.built = true) {
+    if(mHouse1 == gameObject){
+    gameObject.Find("alert1").GetComponent.Alpha(255);
+    } else {
+      Instantiate(mHouse1, Size.x, Size.y, Size.z), "mHouse1");
+    }
+
+  }
+
+}
+
+function Update() {
+  if(CharacterController.collides.tag.("Door")) {
+    Door(); 
+  }
+}
+
+function Door() {
+
+  //Door Rotate
+  Animation.Play("rotate");
+}
