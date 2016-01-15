@@ -53,7 +53,7 @@ function Update () {
   
   //GUI Show if key 'B' is pressed.
   
-  //NOTE! : Numbers are subjected to changed when used in the Unity Enviroment. Change Numbers in script, too lazy to make var's :P
+  //NOTE to self! : Numbers are subjected to changed when used in the Unity Enviroment.
   if(Input.GetKeyDown("b") && hPfor1 == 1 || raft == 1 || tent == 1)
     {
       //GUI = True
