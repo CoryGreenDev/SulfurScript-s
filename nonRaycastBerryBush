@@ -9,7 +9,10 @@ function Update () {
   if(characterController is collider && on.("Berry Bush") {
     if(Input.GetMouseDown(1)) {
       Destroy.gameObject(this);
-      //inv. Checking var's in inv script
+      inv.Berries ++;
+      
+    } else {
+    Debug.Log("Exception (Berries Line: 12)")
     }
   }
 }
