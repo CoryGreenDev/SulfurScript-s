@@ -1,3 +1,13 @@
+//Created by Cory Green @ 9:25 AM on 1/15/16 or January 15th 2016.
+
+//v0.2
+
+//Not free by any means, email me @ corygreen5858@gmail.com for usage.
+
+//If found stolen, you will be brought into the court of law.
+
+//You have been warned.
+
 #pragma strict
 
 private var PlayerGUI : playerGUI;
@@ -36,6 +46,10 @@ function Update () {
     hPfor1 == 10;
   }
   
+  if(showGUI == true){
+    
+  }
+  
   
   //GUI Show if key 'B' is pressed.
   
@@ -62,7 +76,21 @@ function Update () {
             if(Button.Clicked(1) && raft >= 1){
               Instantiate(("raft"),Mouse.Cursor.x, Mouse.Cursor.y - 150, 200, 150);
           Stop();
+          
+        //House Crafting
+        GUI.Label(Rect (30, 30, 25, 200, 150), "Build a House?");
+          GUI.Button (Rect (35, 30, 25, 200, 150), "Build"); 
+            if(Button.Clicked(1) && hPfor1 >= 3){
+              Instantiate(("mHouse1"),Mouse.Cursor.x, Mouse.Cursor.y - 150, 1600, 2000);
+          Stop();
             } 
     }
+  }
 }
-
+function Stop(){
+  GUI.EndGroup();
+  Debug.Log(console("successful craft"));
+} else {
+    Debug.Log("crafted but exception in Ending.");
+  }
+}
