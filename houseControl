@@ -1,3 +1,4 @@
+//v.01
 var Collider : collider;
 //Size's
 var Size.x : int = 450;
