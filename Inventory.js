@@ -3,6 +3,7 @@
 var Sticks : int = 0;
 var Planks : int = 0;
 var Stone : int = 0;
+var Berries : int = 0;
 
 public var showGUI : boolean = false;
 
@@ -15,16 +16,20 @@ function Start(){
 }
 
 function Update (){
-  if(Sticks <= 0) {
-      Sticks == 0;
+  if(Sticks <= minVal) {
+      Sticks == minVal;
     }
     
-    if(Planks <= 0) {
-      Planks == 0;
+    if(Planks <= minVal) {
+      Planks == minVal;
     }
     
-    if(Stone <= 0) {
-      Stone == 0;
+    if(Stone <= minVal) {
+      Stone == minVal;
+    }
+    
+    if(Berries <= minVal) {
+    Berries == minVal;
     }
     if(Input.GetKeyDown("e")){
       showGUI = true;
