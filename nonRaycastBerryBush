@@ -1,0 +1,15 @@
+#pragma strict
+private var collider : Capsule Collider;
+
+var inv : Inventory;
+
+private var characterController : CharacterController;
+
+function Update () {
+  if(characterController is collider && on.("Berry Bush") {
+    if(Input.GetMouseDown(1)) {
+      Destroy.gameObject(this);
+      //inv. Checking var's in inv script
+    }
+  }
+}
