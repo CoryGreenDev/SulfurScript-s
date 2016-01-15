@@ -86,6 +86,8 @@ function Update () {
             } 
     }
   }
+} else {
+  Debug.Log("Error on Lines 84, 77, or 70")
 }
 function Stop(){
   GUI.EndGroup();
